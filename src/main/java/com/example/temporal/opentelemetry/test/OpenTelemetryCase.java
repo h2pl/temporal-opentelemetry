@@ -58,7 +58,7 @@ public class OpenTelemetryCase {
 
     public static void main(String[] args) {
         System.out.println("initOpenTelemetry");
-        OpenTelemetry openTelemetry = TracingConfig.initDynatraceUseOneAgent();
+        OpenTelemetry openTelemetry = TracingConfig.initOpenTelemetryProperties();
         log.info("openTelemetry" + JSON.toJSONString(openTelemetry));
 
 //        OpenTelemetry openTelemetry = TracingConfig.initOpenTelemetry("http://localhost:4317");
