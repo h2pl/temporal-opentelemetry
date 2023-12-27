@@ -112,8 +112,8 @@ public class TracingConfigTrial {
         return sdk;
     }
 
-    private static final String DT_API_URL = "https://aki10000.live.dynatrace.com/api/v2/otlp"; // TODO: Provide your SaaS/Managed URL here
-    private static final String DT_API_TOKEN = "dt0c01.BZCWAQJ6RQ6BYCNCIRD7WIKV.BCAYABR367UJDE3TJ6H7GB7QYGITGLVFQUCD4STGL6QJVDE4BVWOVYCMSMPDO4YI"; // TODO: Provide the OpenTelemetry-scoped access token here
+    private static final String DT_API_URL = "https://mik39618.live.dynatrace.com/api/v2/otlp"; // TODO: Provide your SaaS/Managed URL here
+    private static final String DT_API_TOKEN = "dt0c01.BHESZI3A66SZ7Y2YXBPNCZ2F.IEEJZNCQ7HQA6KYKM3MAFGP3WZZRPEMDPXTWBRVRPRXOQUUGFPSSPPU5KU2K6WRA"; // TODO: Provide the OpenTelemetry-scoped access token here
     public static OpenTelemetry initOpenTelemetryManually(){
         // ===== GENERAL SETUP =====
 
