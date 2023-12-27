@@ -33,7 +33,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Stream;
 
-public class TracingConfig {
+public class TracingConfigTrial {
     public static OpenTelemetry initOpenTelemetry(String jaegerEndpoint) {
         // Export traces to Jaeger over OTLP
         OtlpGrpcSpanExporter jaegerOtlpExporter = OtlpGrpcSpanExporter.builder().setEndpoint(jaegerEndpoint).setTimeout(30, TimeUnit.SECONDS).build();
@@ -112,8 +112,8 @@ public class TracingConfig {
         return sdk;
     }
 
-    private static final String DT_API_URL = "https://dynatraceduragnp.dell.com:443/e/puj58475/api/v2/otlp"; // TODO: Provide your SaaS/Managed URL here
-    private static final String DT_API_TOKEN = "dt0c01.E65MON5BMWPSKROTTB35UNKD.L5JLH5K5LYGOANRTFSVYLGSE7O2HGWSO4IYBOOMNQKEW7TPDOEE4D57HK2C3K3GC"; // TODO: Provide the OpenTelemetry-scoped access token here
+    private static final String DT_API_URL = "https://aki10000.live.dynatrace.com/api/v2/otlp"; // TODO: Provide your SaaS/Managed URL here
+    private static final String DT_API_TOKEN = "dt0c01.BZCWAQJ6RQ6BYCNCIRD7WIKV.BCAYABR367UJDE3TJ6H7GB7QYGITGLVFQUCD4STGL6QJVDE4BVWOVYCMSMPDO4YI"; // TODO: Provide the OpenTelemetry-scoped access token here
     public static OpenTelemetry initOpenTelemetryManually(){
         // ===== GENERAL SETUP =====
 

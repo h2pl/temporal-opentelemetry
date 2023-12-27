@@ -84,6 +84,10 @@ public class OpenTelemetryCase {
     }
 
     public static void demo() {
+        System.out.println("initOpenTelemetry");
+        String name = System.getenv("OTEL_SERVICE_NAME");
+        System.out.println(name);
+
         TracingConfig.initOpenTelemetryManually();
 
         Tracer tracer = GlobalOpenTelemetry
